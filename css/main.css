@@ -398,11 +398,11 @@ a.red-btn {
     position: relative;
     list-style-type: none;
 }
-.land-com-form form ul li:before{
+.land-com-form form ul li:before {
     font-size: 18px;
     margin-top: 12px;
     margin-left: 10px;
-    color: #6a717f;
+    color: #e54645;
     font-weight: 500;
 }
 .land-com-form form ul li:nth-child(1):before{content: "person";}
