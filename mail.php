@@ -3,11 +3,11 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         # FIX: Replace this email with recipient email
-        $mail_to = "support@rn53themes.net";
+        $mail_to = "jburton.mail10@yahoo.com";
         
         # Sender Data
         //$subject = trim($_POST["subject"]);
-		$subject = "RN53 Themes Enquiry";
+		$subject = "Jon Burton Design Test";
         $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["name"])));
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $phone = trim($_POST["phone"]);
@@ -34,17 +34,17 @@
         if ($success) {
             # Set a 200 (okay) response code.
             http_response_code(200);
-            echo "Thank You! Your message has been sent.";
+            echo "Thank You! You are officially Subscribed Recovery Worldwide!";
         } else {
             # Set a 500 (internal server error) response code.
             http_response_code(500);
-            echo "Oops! Something went wrong, we couldn't send your message.";
+            echo "Oops! Let's try that again";
         }
 
     } else {
         # Not a POST request, set a 403 (forbidden) response code.
         http_response_code(403);
-        echo "There was a problem with your submission, please try again.";
+        echo "oh no.. What happened? please try that again.";
     }
 
 ?>
